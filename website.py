@@ -1,9 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 app = Flask(__name__, template_folder="templates")
 
 @app.route('/')
 def home():
   return render_template("glowna.html")
+
+@app.route('/admin')
+def admin():
+  return redirect('https://youtu.be/dQw4w9WgXcQ')
 
 @app.route('/sources')
 def sources():

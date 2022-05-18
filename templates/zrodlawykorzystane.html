@@ -7,10 +7,38 @@
 		a:visited {color: #696969}
 		body {color: #ffffff;}
 		body {background-color: #14131c;}
+		body::-webkit-scrollbar{
+			width: 4px;
+		}
+
+		body::-webkit-scrollbar-track{
+			background:#14131c;
+		}
+
+		body::-webkit-scrollbar-thumb{
+			background:#4caf50;
+		}
 	</style>
+	<link rel="stylesheet" href="{{url_for('static', filename='styles/navbar.css')}}">
 	</head>
 	
 	<body>
+
+		<nav>
+			<ul class="mainMenu">
+				<li class="l1"><br><img src="{{url_for('static', filename='photos/LOGO.png')}}" width="50" height="50"/></li>
+				<li class="l2"><a href="/#about" align="center"><br><b>About</b></a></li>
+				<li class="l3"><a href="/" align="center"><br><b>ARCADE HISTORY</b></a></li>
+				<li class="l4"><a href="/libraryofgames" align="center"><br><b>Game Library</b></a></li>
+	
+			</ul>
+		</nav>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 	
 		<h1 align="center">Sources:</h1>
 		<hr width="100%">
@@ -31,7 +59,7 @@
 <div style=" bottom: 0px; right: 0px; background: #000000; color: #FFFFFF; width: 100%;">
 			<table align="center">
 				<tr>
-					<td align="left"><img src="{{url_for('static', filename='photos/LOGO.png')}}"></td>
+					<td align="left"><img src="{{url_for('static', filename='photos/LOGO.png')}}" width="50" height="50"></td>
           <td></td>
           <td></td>
           <td></td>

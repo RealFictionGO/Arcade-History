@@ -1,0 +1,66 @@
+:root{
+    font-family: monospace;
+    --text-primary: #FFFFFF;
+    --text-secoundary: #d8d5d5;
+    --bg-primary: #14131c;
+    --bg-secoundary: #211f2e;
+    --element-h: 75px;
+}
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background:#14131c;
+}
+
+body::-webkit-scrollbar-thumb{
+    background:#4caf50;
+}
+
+.mainMenu {
+	width:1250px;
+	font-family: sans-serif;
+}
+.mainMenu li {
+	display:block;
+    height: var(--element-h);
+	float:left;
+	border:1px solid #14131c;
+    background-color: #14131c;
+}
+
+.mainMenu a {
+	display:block;
+	text-decoration:none;
+	background-color:#14131c;
+	color:#4caf50;
+    height: var(--element-h);
+    text-align: center;
+}
+
+.mainMenu a:hover {
+	background-color:#4caf50;
+	color:#fff;
+}
+
+.l1{
+    width: 75px;
+    font-size: 25px;
+}
+
+.l2{
+    width: 320px;
+    font-size: 25px;
+}
+
+.l3{
+    width: 400px;
+    font-size: 25px;
+}
+
+.l4{
+    width: 400px;
+    font-size: 25px;
+}

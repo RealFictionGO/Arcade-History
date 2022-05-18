@@ -1,0 +1,31 @@
+a {color: #ffffff;}
+a:hover {color: #fff700;}
+a:visited {color: #696969}
+body {font-size: 40px}
+body {font-family: Monospace;}
+body {color: #ffffff;}
+body {background-color: #14131c;}
+body::-webkit-scrollbar{
+	width: 4px;
+}
+
+body::-webkit-scrollbar-track{
+	background:#14131c;
+}
+
+body::-webkit-scrollbar-thumb{
+	background:#4caf50;
+}
+
+.tryout{
+    color: #2196f3 !important; 
+    font-size: 100px !important;
+}
+
+.tryout:hover{
+    color:#2196f3 !important
+}
+
+.tryout:visited{
+    color: #2196f3 !important;
+}

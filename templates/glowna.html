@@ -1,25 +1,40 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-	<style type="text/css">
-		a {color: #ffffff;}
-		a:hover {color: #fff700;}
-		a:visited {color: #696969}
-		body {font-size: 40px}
-		body {font-family: Monospace;}
-		body {color: #ffffff;}
-		body {background-color: #14131c;}
-	</style>
-	</head>
+
+<head>
+	<link rel="stylesheet" href="{{url_for('static', filename='styles/glowna.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='styles/navbar.css')}}">
+</head>
 	
-	<body>
+<body>
+
+	<nav>
+		<ul class="mainMenu">
+			<li class="l1"><br><img src="{{url_for('static', filename='photos/LOGO.png')}}" width="50" height="50"/></li>
+			<li class="l2"><a href="#about" align="center"><br><b>About</b></a></li>
+			<li class="l3"><a href="/" align="center"><br><b>ARCADE HISTORY</b></a></li>
+			<li class="l4"><a href="/libraryofgames" align="center"><br><b>Game Library</b></a></li>
+
+		</ul>
+	</nav>
+	<br>
+	<br>
+	<br>
+	<br>
 	
 	<img src="{{url_for('static', filename='photos/LOGO.png')}}" style="float:left;" width="500" height="500"/>
 	<p align="center" style="font-size: 80px">ARCADE GAMES HISTORY</p>
 	<br clear="all">
 	<br>
 	<br>
+
+	<p id="about" align="center">On this page you can get information about 3 most iconic games of all time.</p> <br>
+	<p align="center">It has all of the most important thing that you might want to know.</p> <br>
+	<p align="center">In addition, here you can find simplified versions of these games and try them yourself! </p><br>
+	<p align="center"><font color="#c6ff00">Enjoy!</font></p>
 	
+	<br>
+	<br>
 	<img src="{{url_for('static', filename='photos/arcade.png')}}" style="float:right;" width="500" height="500"/>
 	<p align="center"><br><br>Website includes:<br>- PAC MAN<br>- TETRIS<br>- SNAKE</p>
 	<br clear="all">
@@ -27,23 +42,19 @@
 	<br>
 	
 	<img src="{{url_for('static', filename='photos/gameboy.png')}}" style="float:left;" width="500" height="500"/>
-	<p align="center"><br>AUTHORS:<br>- Wojciech Ryba<br>- Adrian Tarach<br>- Dominika Suświłło<br>- Wojciech Wójtowicz</p>
+	<p align="center"><br>AUTHORS:<br>- Wojciech Ryba<br>- Dominika Suświłło<br>- Adrian Tarach<br>- Wojciech Wójtowicz</p>
 	<br clear="all">
 	<br>
 	<br>
 	
-	<table align="center" border="3px">
-		<tr>
-			<td><p style="font-size: 50px"><a href="/libraryofgames"><b>TRY OUT!</b></a>
-		</tr>
-	</table>
+	<p align="center"><a class="tryout" href="/libraryofgames"><b>TRY OUT!</b></a></p>
 	
 		<br><br>
 		
 		<div style=" bottom: 0px; right: 0px; background: #000000; color: #FFFFFF; width: 100%;">
 			<table align="center">
 				<tr>
-					<td align="left"><img src="{{url_for('static', filename='photos/LOGO.png')}}"></td>
+					<td align="left"><img src="{{url_for('static', filename='photos/LOGO.png')}}" width="50" height="50"></td>
           <td></td>
           <td></td>
           <td></td>
@@ -59,5 +70,5 @@
 				</tr>
 			</table>
 		</div>
-	</body>
+</body>
 </html>

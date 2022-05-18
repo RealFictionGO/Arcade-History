@@ -9,10 +9,36 @@
 		body {font-family: Monospace;}
 		body {color: #ffffff;}
 		body {background-color: #14131c;}
+		body::-webkit-scrollbar{
+			width: 4px;
+		}
+
+		body::-webkit-scrollbar-track{
+			background:#14131c;
+		}
+
+		body::-webkit-scrollbar-thumb{
+			background:#4caf50;
+		}
 	</style>
+	<link rel="stylesheet" href="{{url_for('static', filename='styles/navbar.css')}}">
 	</head>
 
 	<body>
+
+		<nav>
+			<ul class="mainMenu">
+				<li class="l1"><br><img src="{{url_for('static', filename='photos/LOGO.png')}}" width="50" height="50"/></li>
+				<li class="l2"><a href="/#about" align="center"><br><b>About</b></a></li>
+				<li class="l3"><a href="/" align="center"><br><b>ARCADE HISTORY</b></a></li>
+				<li class="l4"><a href="/libraryofgames" align="center"><br><b>Game Library</b></a></li>
+	
+			</ul>
+		</nav>
+		<br>
+		<br>
+		<br>
+		<br>
 	
 		<h1 align="center">Pac-Man</h1>
 		<hr width="100%">
@@ -21,7 +47,7 @@
 		<p align="center"><b>THE MOST IMPORTANT INFORMATION:</b></p>
 		<p align="center">Release date : June 1980 <br>Creator : Namco Limited<br>
 		Completion time : 1 year 5 months<br>Objective : eat all off the dots without getting killed<br>live number : 3<br><br><br></p>
-    <a href="/">
+    <a href="/libraryofgames/pacman/game">
 	
 		<table border="3px" align="center">
 			<tr>
@@ -29,9 +55,7 @@
 			</tr>
 		</table>
 		
-			<style type="text/css">
-				a {font-size:150px;}
-			</style>
+			
 	</a>
 		
 		<br clear="all">
@@ -73,24 +97,24 @@
 <br>-As an ode to the iconic game, on the game’s 30th anniversary, a playable version of the game was released as a Google Doodle in 2010.
 
 <div style=" bottom: 0px; right: 0px; background: #000000; color: #FFFFFF; width: 100%;">
-			<table align="center">
-				<tr>
-					<td align="left"><img src="{{url_for('static', filename='photos/LOGO.png')}}"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-					<td align="center"><a href="/">MAIN PAGE</a></td>
-          <td></td>
-          <td></td>
-          <td></td>
-					<td align="center"><a href="/libraryofgames">GAME LIBRARY</a></td>
-          <td></td>
-          <td></td>
-          <td></td>
-					<td align="right"><a href="/sources">SOURCES</a></td>
-				</tr>
-			</table>
-		</div>
+	<table align="center">
+		<tr>
+			<td align="left"><img src="{{url_for('static', filename='photos/LOGO.png')}}" width="50" height="50"></td>
+  <td></td>
+  <td></td>
+  <td></td>
+			<td align="center"><a href="/">MAIN PAGE</a></td>
+  <td></td>
+  <td></td>
+  <td></td>
+			<td align="center"><a href="/libraryofgames">GAME LIBRARY</a></td>
+  <td></td>
+  <td></td>
+  <td></td>
+			<td align="right"><a href="/sources">SOURCES</a></td>
+		</tr>
+	</table>
+</div>
 
 	</body>
 </html>

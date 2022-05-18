@@ -9,33 +9,55 @@
 		body {font-family: Monospace;}
 		body {color: #ffffff;}
 		body {background-color: #14131c;}
+		body::-webkit-scrollbar{
+			width: 4px;
+		}
+
+		body::-webkit-scrollbar-track{
+			background:#14131c;
+		}
+
+		body::-webkit-scrollbar-thumb{
+			background:#4caf50;
+		}
 	</style>
+
+	<link rel="stylesheet" href="{{url_for('static', filename='styles/navbar.css')}}">
 	</head>
 	
 	<body>
+
+		<nav>
+			<ul class="mainMenu">
+				<li class="l1"><br><img src="{{url_for('static', filename='photos/LOGO.png')}}" width="50" height="50"/></li>
+				<li class="l2"><a href="/#about" align="center"><br><b>About</b></a></li>
+				<li class="l3"><a href="/" align="center"><br><b>ARCADE HISTORY</b></a></li>
+				<li class="l4"><a href="/libraryofgames" align="center"><br><b>Game Library</b></a></li>
+	
+			</ul>
+		</nav>
+		<br>
+		<br>
+		<br>
+		<br>
 	
 	<h1 align="center">GAME LIBRARY</h1>
 	<hr width="100%">
 	<br>
 	<br>
-	
-	<a href="/libraryofgames/pacman">  <img src="{{url_for('static', filename='photos/pacmandobiblioteki.png')}}" align="center" width="700" height="500"></a>
-  <p align="center"><a href="/libraryofgames/pacman">
-    </a></p>
+	 
+  	<p align="center"><a href="/libraryofgames/pacman"><img src="{{url_for('static', filename='photos/pacmandobiblioteki.png')}}" align="center" width="700" height="500"></p>
     <br>
 	
-	<a href="/libraryofgames/tetris"><img src="{{url_for('static', filename='photos/tetrisdobiblioteki.jpg')}}" align="center" width="700" height="500"></a>
-  <p align="center"><a href="/libraryofgames/tetris">
-    </a></p>
+  <p align="center"><a href="/libraryofgames/tetris"><img src="{{url_for('static', filename='photos/tetrisdobiblioteki.jpg')}}" align="center" width="700" height="500"></a></p>
 	<br>
-	
-	<a href="/libraryofgames/snake"><img src="{{url_for('static', filename='photos/snakedobiblioteki.jpg')}}" align="center" width="700" height="500"></a>
-	<p align="center"><a href="/libraryofgames/snake"></a></p>
+
+	<p align="center"><a href="/libraryofgames/snake"><img src="{{url_for('static', filename='photos/snakedobiblioteki.jpg')}}" align="center" width="700" height="500"></a></p>
 
 <div style=" bottom: 0px; right: 0px; background: #000000; color: #FFFFFF; width: 100%;">
 			<table align="center">
 				<tr>
-					<td align="left"><img src="{{url_for('static', filename='photos/LOGO.png')}}"></td>
+					<td align="left"><img src="{{url_for('static', filename='photos/LOGO.png')}}" width="50" height="50"></td>
           <td></td>
           <td></td>
           <td></td>
